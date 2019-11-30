@@ -3,7 +3,7 @@ from flask_paginate import Pagination, get_page_args
 import requests
 import json
 
-# Request csv data
+# Request JSON data
 data = requests.get('https://gist.githubusercontent.com/the-akira/65dc489c66fc035ceb8dfc65c1c3da0d/raw/d4df8804c25a662efc42936db60cfbc0a5b19db8/srd_5e_monsters.json').text
 
 app = Flask(__name__)
