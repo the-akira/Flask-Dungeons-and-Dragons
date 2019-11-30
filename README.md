@@ -1,6 +1,14 @@
-# Flask Dungeons & Dragons
+<h1 align="center">Flask Dungeons & Dragons</h1>
 
-A very simple Dungeons & Dragons Flask App
+<h1 align="center">
+    <img alt="Python" title="Flask-DD" src="https://i.imgur.com/VPJmh2b.png"> </br>
+</h1>
+
+<p align="center">
+	A very simple Dungeons & Dragons Flask App
+</p>
+
+---------------------------------------
 
 ## Installation
 
