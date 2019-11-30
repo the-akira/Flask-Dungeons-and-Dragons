@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Flask D&D App</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+      <script src="https://kit.fontawesome.com/abb211c046.js"></script>
+  </head>
+  <body>
+      <button onclick="topFunction()" id="portal" title="Go to top"><i class="fas fa-dungeon fa-3x dungeon"></i></button>
+      <div class="head">
+        <h1 class="title">Flask D&D App <i class="fas fa-dice-d20 fa-2x"></i></h1>
+        <p class="description">
+          <b>Dungeons & Dragons</b> (commonly abbreviated as D&D or DnD) is a fantasy tabletop role-playing game (RPG) originally designed by Gary Gygax and Dave Arneson. It was first published in 1974 by Tactical Studies Rules, Inc. (TSR). The game has been published by Wizards of the Coast (now a subsidiary of Hasbro) since 1997. It was derived from miniature wargames, with a variation of the 1971 game Chainmail serving as the initial rule system. D&D's publication is commonly recognized as the beginning of modern role-playing games and the  role-playing game industry.
+        </p>
+        <div class="header">
+          <a href="https://github.com/the-akira" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+          <a href="https://twitter.com/akirascientist" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+          <a href="https://facebook.com/gabriellfelippe" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+        </div>
+      </div>
+      <div class="container">
+          <div class="monsters">
+            {% for monster in monsters %}
+            <div class="monster-container">
+              <p class="monster-name">{{ monster['name'] }}</p>
+              <img class="monster-image" src="{{ monster['img_url'] }}">  
+              <div class="monster-info">
+                  <p class="family"><i class="fas fa-scroll fa-2x"></i> {{ monster['meta'] }}</p>
+                  <p class="family"><i class="fas fa-shield-alt fa-2x"></i> {{ monster['Armor Class'] }}</p>
+                  <p class="family"><i class="fas fa-heart fa-2x"></i> {{ monster['Hit Points'] }}</p>
+                  <p class="family"><i class="fas fa-shoe-prints fa-2x"></i> {{ monster['Speed'] }}</p>
+                  <table class="attributes">
+                    <tr>
+                      <th>Attribute</th>
+                      <th>Points</th>
+                    </tr>
+                    <tr>
+                      <td><p><b>STR</b></p></td>
+                      <td><p>{{ monster['STR'] }}</p></td>
+                    </tr>
+                    <tr>
+                      <td><p><b>DEX</b></p></td>
+                      <td><p>{{ monster['DEX'] }}</p></td>
+                    </tr>
+                    <tr>
+                      <td><p><b>CON</b></p></td>
+                      <td><p>{{ monster['CON'] }}</p></td>
+                    </tr>      
+                    <tr>
+                      <td><p><b>INT</b></p></td>
+                      <td><p>{{ monster['INT'] }}</p></td>
+                    </tr>        
+                    <tr>
+                      <td><p><b>WIS</b></p></td>
+                      <td><p>{{ monster['WIS'] }}</p></td>
+                    </tr>
+                    <tr>
+                      <td><p><b>CHA</b></p></td>
+                      <td><p>{{ monster['CHA'] }}</p></td>
+                    </tr>   
+                  </table>
+                  <p class="family"><i class="fas fa-book-dead fa-2x"></i> {{ monster['Skills'] }}</p>
+                  <p class="family"><i class="fas fa-book-open fa-2x"></i> {{ monster['Languages']}}</p>
+                  <p><i class="fas fa-pastafarianism fa-3x"></i> {{ monster['Traits']| safe }}</p>
+                  <p><i class="fas fa-hat-wizard fa-3x"></i> {{ monster['Actions']| safe}}</p>
+                  <p ><i class="fas fa-dragon fa-3x"></i> {{ monster['Legendary Actions']| safe}}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+      </div>
+      {{ pagination.links }}
+      <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
