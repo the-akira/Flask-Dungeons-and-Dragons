@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 body{
-	background-image: url(https://www.robbiegraham.uk/upload/2019/04/18/pixel-art-brick-tile-by-drewwayne-on-deviantart-brick-wall-sprite-s-b26643c60d751621.jpg);
+	background-image: url(https://i.ibb.co/qxv2WQQ/wall.png);
 }
 
 .pagination{
@@ -206,7 +206,7 @@ i{
 	font-size: 18px;
 	outline: none;
 	/*background-color: #afa5a4;*/
-	background-image: url('https://thumbs.gfycat.com/DetailedThornyHairstreakbutterfly-size_restricted.gif');
+	background-image: url('https://s6.gifyu.com/images/DetailedThornyHairstreakbutterfly-size_restricted.gif');
 	color: white;
 	cursor: pointer;
 	padding: 25px;
