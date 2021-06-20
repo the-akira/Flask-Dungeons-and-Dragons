@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 body{
-	background-image: url(https://i.ibb.co/qxv2WQQ/wall.png);
+	background-image: url(imagens/wall.png);
 }
 
 .pagination{
@@ -15,13 +15,34 @@ body{
 ul{
 	padding: 10px !important;
 	margin: 10px !important;
+	display: flex;
+	justify-content: center;
 }
 
 li{
 	list-style: none;
+
+}
+
+.icon {
+	display: inline-block;
+	text-align: center;
+}
+
+.disabled {
+	opacity: 0.68;
+}
+
+.active {
+	background-color: gray;
+	opacity: 0.68;
+}
+
+a{
+	text-decoration: none;
+	color: black;
 	padding: 15px;
 	border: 1px solid #250f00;
-	display: inline;
 	/* background-color: #c5a365; */
 	background-color: #e0cc99;
 	border-radius: 5px;
@@ -29,14 +50,8 @@ li{
 	opacity: 0.8;
 }
 
-li.active{
-	color: black !important;
-	background-color: #afa5a4;
-}
-
-a{
-	text-decoration: none;
-	color: black;
+a:hover {
+	background-color: #AFA6A5;
 }
 
 .family{
@@ -69,7 +84,7 @@ a{
 
 .head{
 	/* background-color: #c5a365; */
-	background-image: url('https://www.wallpaperboulevard.com/Images/product/orange-scroll-texture-tnfp-l.jpg');
+	background-image: url(imagens/texture.jpg);
 	width: 80%;
 	margin: 0 auto;
 	padding-top: 10px;
@@ -122,7 +137,7 @@ hr{
 .monster-container{
 	padding: 35px;
 	/* background-color: #c5a365; */
-	background-image: url('https://www.wallpaperboulevard.com/Images/product/orange-scroll-texture-tnfp-l.jpg');
+	background-image: url(imagens/texture.jpg);
 	opacity: 0.85;
 	margin-bottom: 18px;
 	color: black;
@@ -173,7 +188,6 @@ tr:hover {
 }
 
 i{
-	margin-right: 7px;
 	color: #250f00;
 }
 
@@ -189,7 +203,7 @@ i{
 
 .monster-image:hover{
 	opacity: 0.9;
-	cursor: url("https://github.githubassets.com/images/icons/emoji/unicode/1f4d5.png"), auto;
+	cursor: url(imagens/book.png), auto;
 }
 
 .monster-info{
@@ -206,7 +220,7 @@ i{
 	font-size: 18px;
 	outline: none;
 	/*background-color: #afa5a4;*/
-	background-image: url('https://s6.gifyu.com/images/DetailedThornyHairstreakbutterfly-size_restricted.gif');
+	background-image: url(imagens/portal.gif);
 	color: white;
 	cursor: pointer;
 	padding: 25px;
@@ -221,4 +235,23 @@ i{
 .dungeon{
 	margin: 0;
 	color: white;
+}
+
+@media screen and (max-width: 600px) {
+	.monsters {
+		list-style-type: none;
+		margin-left: 0;
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+	}
+	.head {
+		width: 95%;
+	}
+	.monster-container{
+		width: 95%;
+		text-align: center;
+		padding: 7px;
+	}
 }

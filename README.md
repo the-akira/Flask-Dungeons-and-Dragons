@@ -5,10 +5,8 @@
 </h1>
 
 <p align="center">
-	A very simple Dungeons & Dragons Flask App
+	A simple Dungeons & Dragons Flask App
 </p>
-
----------------------------------------
 
 ## Installation
 
