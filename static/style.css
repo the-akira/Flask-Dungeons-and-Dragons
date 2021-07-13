@@ -1,257 +1,260 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
-body{
-	background-image: url(imagens/wall.png);
+body {
+    background-image: url(imagens/wall.png);
 }
 
-.pagination{
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 36px;
-	width: 100%;	
-	text-align: center;
+.pagination {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+    width: 100%;
+    text-align: center;
 }
 
-ul{
-	padding: 10px !important;
-	margin: 10px !important;
-	display: flex;
-	justify-content: center;
+ul {
+    padding: 10px !important;
+    margin: 10px !important;
+    display: flex;
+    justify-content: center;
 }
 
-li{
-	list-style: none;
+li {
+    list-style: none;
 
 }
 
 .icon {
-	display: inline-block;
-	text-align: center;
+    display: inline-block;
+    text-align: center;
 }
 
 .disabled {
-	opacity: 0.68;
+    opacity: 0.68;
 }
 
 .active {
-	background-color: gray;
-	opacity: 0.68;
+    background-color: gray;
+    opacity: 0.68;
 }
 
-a{
-	text-decoration: none;
-	color: black;
-	padding: 15px;
-	border: 1px solid #250f00;
-	/* background-color: #c5a365; */
-	background-color: #e0cc99;
-	border-radius: 5px;
-	box-shadow: 3.3px 3.3px 3.3px rgba(0,0,0,.5);
-	opacity: 0.8;
+a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border: 1px solid #250f00;
+    /* background-color: #c5a365; */
+    background-color: #e0cc99;
+    border-radius: 5px;
+    box-shadow: 3.3px 3.3px 3.3px rgba(0, 0, 0, .5);
+    opacity: 0.8;
 }
 
 a:hover {
-	background-color: #AFA6A5;
+    background-color: #AFA6A5;
 }
 
-.family{
-	font-family: 'Press Start 2P', cursive;
-	color: #250f00;
-	font-size: 0.92rem;
+.family {
+    font-family: 'Press Start 2P', cursive;
+    color: #250f00;
+    font-size: 0.92rem;
 }
 
-.link{
-	color: black;
-	text-align: center;
-	display: block;
-	margin-top: 30px;
-	border: 1px solid black;
-	background-color: #374f66;
-	color: #b1c2de;
-	padding: 6px;
-	border-radius: 5px;
-	transition: background-color 2.5s;
+.link {
+    color: black;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color: #374f66;
+    color: #b1c2de;
+    padding: 6px;
+    border-radius: 5px;
+    transition: background-color 2.5s;
 }
 
-.title{
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 25px;
-	color: #250f00;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 2.66rem;
+.title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #250f00;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.66rem;
 }
 
-.head{
-	/* background-color: #c5a365; */
-	background-image: url(imagens/texture.jpg);
-	width: 80%;
-	margin: 0 auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 35px;
-	margin-bottom: 25px;
-	opacity: 0.85;
-	border: 2px solid #250f00;
-	border-radius: 5px;
+.head {
+    /* background-color: #c5a365; */
+    background-image: url(imagens/texture.jpg);
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    opacity: 0.85;
+    border: 2px solid #250f00;
+    border-radius: 5px;
 
 }
 
-.description{
-	margin: 0 auto;
-	margin-bottom: 24px;
-	width: 80%;
-	text-align: justify;
-	color: #250f00;
-	font-size: 1.07rem;
-	font-family: 'Press Start 2P', cursive;
+.description {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 80%;
+    text-align: justify;
+    color: #250f00;
+    font-size: 1.07rem;
+    font-family: 'Press Start 2P', cursive;
 }
 
-hr{
-	color: #b1c2de;
+hr {
+    color: #b1c2de;
 }
 
-.link:hover{
-	background-color: black;
-	text-decoration: none;
+.link:hover {
+    background-color: black;
+    text-decoration: none;
 }
 
-.container{
-	margin: 0 auto;
-	max-width: 1513px;
+.container {
+    margin: 0 auto;
+    max-width: 1513px;
 }
 
-.monsters{
-	list-style-type: none;
-	margin-left: 0;
-	margin-top: 0;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-	grid-template-rows: auto;
-	justify-content: space-evenly;
-	padding: 15px;
-	grid-column-gap: 22px;
-	overflow-x: hidden;		
+.monsters {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    padding: 15px;
+    grid-column-gap: 22px;
+    overflow-x: hidden;
 }
 
-.monster-container{
-	padding: 35px;
-	/* background-color: #c5a365; */
-	background-image: url(imagens/texture.jpg);
-	opacity: 0.85;
-	margin-bottom: 18px;
-	color: black;
-	border: 2px solid #250f00;
-	border-radius: 7px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+.monster-container {
+    padding: 35px;
+    /* background-color: #c5a365; */
+    background-image: url(imagens/texture.jpg);
+    opacity: 0.85;
+    margin-bottom: 18px;
+    color: black;
+    border: 2px solid #250f00;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
 }
 
-.monster-name{
-	text-align: center;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 2.3rem;
-	color: #250f00;
+.monster-name {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.3rem;
+    color: #250f00;
 }
 
-.header{
-	margin-bottom: 30px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-	text-align: center;
+.header {
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
 }
 
-.attributes{
-	border-collapse: collapse;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 35px;
-	margin-bottom: 35px;
+.attributes {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
-th, td{
-	border: 1px solid black;
-	padding: 35px;
-	vertical-align: bottom;
-	font-family: 'Press Start 2P', cursive;
-	color: #250f00;
+th,
+td {
+    border: 1px solid black;
+    padding: 35px;
+    vertical-align: bottom;
+    font-family: 'Press Start 2P', cursive;
+    color: #250f00;
 }
 
-th{
-	background-color: #ba9d68;
+th {
+    background-color: #ba9d68;
 }
 
 tr:hover {
-	background-color: #ba9d68;
-	cursor: pointer;
+    background-color: #ba9d68;
+    cursor: pointer;
 }
 
-i{
-	color: #250f00;
+i {
+    color: #250f00;
 }
 
-.monster-image{
-	width: 240px;
-	height: 370px;
-	display: block;
-	margin: 10px auto 35px auto;
-	width: 50%;
-	border: 1px solid #250f00;
-	border-radius: 5px;
+.monster-image {
+    width: 240px;
+    height: 370px;
+    display: block;
+    margin: 10px auto 35px auto;
+    width: 50%;
+    border: 1px solid #250f00;
+    border-radius: 5px;
 }
 
-.monster-image:hover{
-	opacity: 0.9;
-	cursor: url(imagens/book.png), auto;
+.monster-image:hover {
+    opacity: 0.9;
+    cursor: url(imagens/book.png), auto;
 }
 
-.monster-info{
-	padding-left: 25px;
-	text-align: center;
+.monster-info {
+    padding-left: 25px;
+    text-align: center;
 }
 
-#portal{
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 99;
-	font-size: 18px;
-	outline: none;
-	/*background-color: #afa5a4;*/
-	background-image: url(imagens/portal.gif);
-	color: white;
-	cursor: pointer;
-	padding: 25px;
-	border-radius: 55px;
-	border: 1px solid #250f00;
+#portal {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    /*background-color: #afa5a4;*/
+    background-image: url(imagens/portal.gif);
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 55px;
+    border: 1px solid #250f00;
 }
 
-#portal:hover{
-	background-color: #ba9d68;
+#portal:hover {
+    background-color: #ba9d68;
 }
 
-.dungeon{
-	margin: 0;
-	color: white;
+.dungeon {
+    margin: 0;
+    color: white;
 }
 
 @media screen and (max-width: 600px) {
-	.monsters {
-		list-style-type: none;
-		margin-left: 0;
-		margin-top: 0;
-		display: flex;
-		flex-direction: column;
-		padding: 5px;
-	}
-	.head {
-		width: 95%;
-	}
-	.monster-container{
-		width: 95%;
-		text-align: center;
-		padding: 7px;
-	}
+    .monsters {
+        list-style-type: none;
+        margin-left: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .head {
+        width: 95%;
+    }
+
+    .monster-container {
+        width: 97%;
+        text-align: center;
+        padding: 7px;
+    }
 }
