@@ -1,7 +1,7 @@
 <h1 align="center">Flask Dungeons & Dragons</h1>
 
 <h1 align="center">
-    <img alt="Python" title="Flask-DD" src="https://i.ibb.co/dcSMJDY/DD.png"> </br>
+    <img alt="Python" title="Flask-DD" src="https://raw.githubusercontent.com/the-akira/Flask-Dungeons-and-Dragons/master/static/imagens/avatar.png"> </br>
 </h1>
 
 <p align="center">
